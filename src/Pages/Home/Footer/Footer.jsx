@@ -7,7 +7,7 @@ const Footer = () => {
         <aside>
        
           <p className="font-bold">
-            ACME Industries Ltd. <br/>Providing reliable tech since 1992
+           Task Management
           </p> 
           <p>Copyright © 2023 - All right reserved</p>
         </aside> 

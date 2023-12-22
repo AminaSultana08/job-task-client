@@ -34,7 +34,7 @@ const SignUp = () => {
     return (
         <>
         <div>
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-white">
           <div className="hero-content flex-col lg:flex-row-reverse">
             <div className="text-center lg:text-left">
             <div >
@@ -98,7 +98,7 @@ const SignUp = () => {
 
                 </div>
               </form>
-              <p className="text-center">Have an Account? <Link to='/signIn'>SignIn</Link></p>
+              <p className="text-center">Have an Account? <Link to='/signIn'><span className="text-blue-800 underline">SignIn</span></Link></p>
               <div className="divider px-9">OR</div>
               <SocialSignIn></SocialSignIn>
             </div>

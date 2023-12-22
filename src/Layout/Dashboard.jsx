@@ -16,7 +16,7 @@ const Dashboard = () => {
             {/* right side */}
             <div className="bg-blue-50 col-span-10">
                 <Outlet></Outlet>
-                <h1 className="text-blue-900 font-bold text-center text-4xl pt-10">Job Management Dashboard</h1>
+               
             </div>
             </div>
            
