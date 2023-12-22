@@ -5,6 +5,8 @@ import Dashboard from "../Layout/Dashboard";
 import SignIn from "../Pages/SignIn/SignIn";
 import SignUp from "../Pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
+import ToDo from "../Pages/Home/Dashboard/Dashboard/ToDo/ToDo";
+import Contact from "../Pages/Contact";
 
 const router = createBrowserRouter([
     {
@@ -22,7 +24,11 @@ const router = createBrowserRouter([
             {
                 path:'/signUp',
                 element:<SignUp></SignUp>
-            }
+            },
+            {
+                path:'/contact',
+                element:<Contact></Contact>
+            },
 
           
         ]
@@ -31,6 +37,10 @@ const router = createBrowserRouter([
         path:'/dashboard',
         element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute> ,
         children:[
+            {
+                path:'todo',
+                element:<ToDo></ToDo>
+            }
 
         ]
     }

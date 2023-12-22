@@ -11,10 +11,12 @@ const Dashboard = () => {
         <Navbar></Navbar>
            
             <div className="w-full min-h-[90vh] grid grid-cols-12">
+           
             <DashboardNavbar></DashboardNavbar>
             {/* right side */}
-            <div className="bg-red-100 col-span-10">
+            <div className="bg-blue-50 col-span-10">
                 <Outlet></Outlet>
+                <h1 className="text-blue-900 font-bold text-center text-4xl pt-10">Job Management Dashboard</h1>
             </div>
             </div>
            

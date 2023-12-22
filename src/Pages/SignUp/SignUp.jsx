@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import Swal from "sweetalert2";
+import SocialSignIn from "../../Component/SocialSignIn";
 
 const SignUp = () => {
     const {register,handleSubmit,reset,formState: { errors },} = useForm()
@@ -98,7 +99,8 @@ const SignUp = () => {
                 </div>
               </form>
               <p className="text-center">Have an Account? <Link to='/signIn'>SignIn</Link></p>
-            
+              <div className="divider px-9">OR</div>
+              <SocialSignIn></SocialSignIn>
             </div>
            
           </div>
