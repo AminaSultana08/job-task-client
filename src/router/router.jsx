@@ -7,6 +7,7 @@ import SignUp from "../Pages/SignUp/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import ToDo from "../Pages/Home/Dashboard/Dashboard/ToDo/ToDo";
 import Contact from "../Pages/Contact";
+import DashboardRight from "../Pages/Home/Dashboard/Dashboard/DashboardRight";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path:'todo',
                 element:<ToDo></ToDo>
+            },
+            {
+                path:'/dashboard',
+                element:<DashboardRight></DashboardRight>
             }
 
         ]
