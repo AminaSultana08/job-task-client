@@ -1,11 +1,10 @@
 import axios from "axios";
 
-
- const axiosSecure = axios.create({
-    baseURL: "http://localhost:5000/"
-})
+const axiosSecure = axios.create({
+  baseURL: "https://job-task-server-one-xi.vercel.app",
+});
 const useAxiosSecure = () => {
-    return axiosSecure;
+  return axiosSecure;
 };
 
 export default useAxiosSecure;

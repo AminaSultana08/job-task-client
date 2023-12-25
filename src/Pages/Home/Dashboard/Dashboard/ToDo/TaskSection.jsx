@@ -43,7 +43,7 @@ const TaskSection = ({item,index}) => {
     const status = data.status;
     const tasks = { titles, descriptions, deadlines, priority, status };
     const res = await axios.put(
-      `http://localhost:5000/tasks/update/${item?._id}`,
+      `https://job-task-server-one-xi.vercel.apptasks/update/${item?._id}`,
       tasks
     );
     if (res.data) {

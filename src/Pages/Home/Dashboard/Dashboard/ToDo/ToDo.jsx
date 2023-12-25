@@ -27,7 +27,7 @@ const ToDo = () => {
           const status = { status: destination.droppableId };
          
           const res = await axios.put(
-           ` http://localhost:5000/tasks/${draggableId}`,
+           ` https://job-task-server-one-xi.vercel.apptasks/${draggableId}`,
             status
           );
           if (res.data.modifiedCount > 0) {
